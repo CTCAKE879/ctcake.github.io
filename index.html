@@ -2,8 +2,41 @@
 <html>
 <head>
     <title>搜索信息</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            margin: 20px;
+        }
+        label {
+            font-size: 18px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #warning {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <div id="warning">仅供查询自己信息是否泄露，切勿用于非法用途！</div>
     <form>
         <label for="searchInput">输入搜索内容：</label>
         <input type="text" id="searchInput" placeholder="在这里输入内容">
